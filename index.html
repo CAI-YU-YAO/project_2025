@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
     />
     <!-- MDB ESSENTIAL -->
-    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="src/mdb/scss/mdb.pro.css" />
     <!-- MDB PLUGINS -->
     <link rel="stylesheet" href="plugins/css/all.min.css" />
     <!-- 自訂義 -->
@@ -33,70 +33,69 @@
 
 
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-light navbar-light ">
   <!-- Container wrapper -->
   <div class="container-fluid">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">水果</a>
+
     <!-- Toggle button -->
-    <button
-      data-mdb-collapse-init
-      class="navbar-toggler"
-      type="button"
-      data-mdb-target="#navbarLeftAlignExample"
-      aria-controls="navbarLeftAlignExample"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
     </button>
 
     <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarLeftAlignExample">
-      <!-- Left links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link 12/03 </a>
-        </li>
-        <!-- Navbar dropdown -->
+
+        <!-- Dropdown -->
         <li class="nav-item dropdown">
-          <a
-            data-mdb-dropdown-init
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-            aria-expanded="false"
-          >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" data-mdb-dropdown-init aria-expanded="false">
             Dropdown
           </a>
           <!-- Dropdown menu -->
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li>
-              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#"></a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSdmbQc6YvkIMl33NpuD038uVpLdUu2NUr4CGdunOVBpPVzZqg/viewform?usp=header">回饋</a>
             </li>
-            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
             <li>
               <a class="dropdown-item" href="#">Something else here</a>
             </li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled"
-            >Disabled</a
-          >
+
+      </ul>
+
+      <!-- Icons -->
+      <ul class="navbar-nav d-flex flex-row me-1">
+        <li class="nav-item me-3 me-lg-0">
+          <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+        <li class="nav-item me-3 me-lg-0">
+          <a class="nav-link" href="#"><i class="fab fa-line"></i></a>
         </li>
       </ul>
-      <!-- Left links -->
+
+      <!-- Search -->
+      <form class="w-auto">
+        <input type="search" class="form-control" placeholder="搜尋" aria-label="Search">
+      </form>
+
     </div>
-    <!-- Collapsible wrapper -->
   </div>
   <!-- Container wrapper -->
 </nav>
+<!-- Navbar -->
 
 
 
@@ -172,9 +171,7 @@
                     </div>
 
                 <div class="text-center mx-auto mb-5" style="max-width: 700px;"><p class="fs-2">農曆傳統四季月份</p>
-                    <p class="fs-3">春季：約2月初~5月初 夏季：約5月初~8月初<br>秋季：約8月初~11月初  冬季：約11月初~翌年2月初
-
-                    </p>
+                    <p class="fs-3">春季：約2月初~5月初 夏季：約5月初~8月初<br>秋季：約8月初~11月初  冬季：約11月初~翌年2月初</p>
                 </div>
                     <div class="tab-content">
                         <div id="tab-1" class="tab-pane fade show p-0 active">
@@ -184,7 +181,7 @@
                                         <div class="col-md-6 col-lg-4 col-xl-3">
                                             <div class="rounded position-relative fruite-item">
                                                 <div class="fruite-img">
-                                                    <img src="./img/恐龍蛋1.png" class="img-fluid w-100 rounded-top" alt="">
+                                                    <img src="./img/恐龍蛋2.png" class="img-fluid w-100 rounded-top" alt="">
                                                 </div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
                                                     <h4>恐龍蛋</h4>
@@ -323,7 +320,7 @@
                                                         <span style="margin-left: 0px;">維生素B群</span>
                                                     </p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
-                                                        <p class="text-dark fs-5 fw-bold mb-0">$219 / 斤</p>
+                                                        <p class="text-dark fs-5 fw-bold mb-0">$79 / 斤</p>
                                                         <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>  加入購物車</a>
                                                     </div>
                                                 </div>
@@ -336,7 +333,10 @@
                                                 </div>
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
                                                     <h4>藍莓</h4>
-                                                    <p>產地：秘魯、智利、台灣<br> 營養價值：如花青素、類黃酮、維生素C、K、E、膳食纖維</p>
+                                                    <p>產地：秘魯、智利、台灣<br>
+                                                        營養價值：如花青素、類黃酮、K、<br>
+                                                        <span style="margin-left: 70px;">維生素C、E、膳食纖維</span>
+                                                    </p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
                                                         <p class="text-dark fs-5 fw-bold mb-0">$90 / 盒</p>
                                                         <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>  加入購物車</a>
@@ -387,7 +387,8 @@
                                                     </p>
 
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
-                                                        <p class="text-dark fs-5 fw-bold mb-0">$36 / 斤</p>
+                                                        <p class="text-dark fs-5 fw-bold mb-0">$75
+                                                             / 斤</p>
                                                         <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>  加入購物車</a>
                                                     </div>
                                                 </div>
@@ -406,7 +407,7 @@
                                                     </p>
 
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
-                                                        <p class="text-dark fs-5 fw-bold mb-0">$36 / 斤</p>
+                                                        <p class="text-dark fs-5 fw-bold mb-0">$12 / 顆</p>
                                                         <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>  加入購物車</a>
                                                     </div>
                                                 </div>
@@ -420,12 +421,11 @@
                                                 <div class="p-4 border border-secondary border-top-0 rounded-bottom">
                                                     <h4>枇杷</h4>
                                                     <p>產地：台灣<br>
-                                                    營養價值：水分、膳食纖維、鎂、<br>
-                                                    <span style="margin-left: 80px;">β-胡蘿蔔素、維生素C</span>
+                                                    營養價值：維生素A、胡蘿蔔素、<br>
+                                                    <span style="margin-left: 60px;">鉀、維生素C、葉酸</span>
                                                     </p>
-
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
-                                                        <p class="text-dark fs-5 fw-bold mb-0">$36 / 斤</p>
+                                                        <p class="text-dark fs-5 fw-bold mb-0">$90 / 斤</p>
                                                         <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>  加入購物車</a>
                                                     </div>
                                                 </div>
@@ -444,7 +444,7 @@
                                                     </p>
 
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
-                                                        <p class="text-dark fs-5 fw-bold mb-0">$36 / 斤</p>
+                                                        <p class="text-dark fs-5 fw-bold mb-0">$300 / 盒</p>
                                                         <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>  加入購物車</a>
                                                     </div>
                                                 </div>
@@ -463,7 +463,7 @@
                                                     </p>
 
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
-                                                        <p class="text-dark fs-5 fw-bold mb-0">$36 / 斤</p>
+                                                        <p class="text-dark fs-5 fw-bold mb-0">$99 / 斤</p>
                                                         <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>  加入購物車</a>
                                                     </div>
                                                 </div>
@@ -471,92 +471,374 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                             </div>
 
+            <div id="tab-2" class="tab-pane fade show p-0">
+              <div class="row g-4">
+                <div class="col-lg-12">
+                  <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                      <div class="rounded position-relative fruite-item">
+                        <div class="fruite-img">
+                          <img src="img/藍莓.png" class="img-fluid w-100 rounded-top" alt="">
                         </div>
-
-                        <div id="tab-2" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-12">
-                                    <div class="row g-4">
-                                        <div class="col-md-6 col-lg-4 col-xl-3">
-                                            <div class="rounded position-relative fruite-item">
-                                                <div class="fruite-img">
-                                                    <img src="img/fruite-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
-                                                </div>
-                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>下</h4>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                                                    <div class="d-flex justify-content-between flex-lg-wrap">
-                                                        <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> 加入購物車</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-4 col-xl-3">
-                                            <div class="rounded position-relative fruite-item">
-                                                <div class="fruite-img">
-                                                    <img src="img/fruite-item-2.jpg" class="img-fluid w-100 rounded-top" alt="">
-                                                </div>
-                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>好</h4>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                                                    <div class="d-flex justify-content-between flex-lg-wrap">
-                                                        <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>  加入購物車</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                          style="top: 10px; left: 10px;">Fruits</div>
+                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                          <h4>藍莓</h4>
+                          <p>產地：秘魯、智利、台灣<br> 營養價值：如花青素、類黃酮、維生素C、K、E、膳食纖維</p>
+                          <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$90 / 盒</p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                class="fa fa-shopping-bag me-2 text-primary"></i> 加入購物車</a>
+                          </div>
                         </div>
-                        <div id="tab-3" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-12">
-                                    <div class="row g-4">
-                                        <div class="col-md-6 col-lg-4 col-xl-3">
-                                            <div class="rounded position-relative fruite-item">
-                                                <div class="fruite-img">
-                                                    <img src="img/fruite-item-1.jpg" class="img-fluid w-100 rounded-top" alt="">
-                                                </div>
-                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>恐龍蛋</h4>
-                                                    <p>產地：智利<br> 營養價值：維生素、礦物質、膳食纖維、植化素、抗氧化成分</p>
-                                                    <div class="d-flex justify-content-between flex-lg-wrap">
-                                                        <p class="text-dark fs-5 fw-bold mb-0">30/顆</p>
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>  加入購物車</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-4 col-xl-3">
-                                            <div class="rounded position-relative fruite-item">
-                                                <div class="fruite-img">
-                                                    <img src="img/fruite-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
-                                                </div>
-                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
-                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>Apple</h4>
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                                                    <div class="d-flex justify-content-between flex-lg-wrap">
-                                                        <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                      </div>
                     </div>
+
+
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                      <div class="rounded position-relative fruite-item">
+                        <div class="fruite-img">
+                          <img src="img/桑葚.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                          style="top: 10px; left: 10px;">Fruits
+                        </div>
+                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                          <h4>桑椹</h4>
+                          <p>產地：台灣<br>營養價值：富含花青素、維生素C、鐵、鈣</p>
+                          <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$120 / 斤</p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                              <i class="fa fa-shopping-bag me-2 text-primary"></i> 加入購物車</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                      <div class="rounded position-relative fruite-item">
+                        <div class="fruite-img">
+                          <img src="img/枇杷.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                          style="top: 10px; left: 10px;">Fruits
+                        </div>
+                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                          <h4>枇杷</h4>
+                          <p>產地：台灣<br>營養價值：維生素A、胡蘿蔔素、維生素C、鉀、膳食纖維及葉酸</p>
+                          <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$90 / 斤</p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                              <i class="fa fa-shopping-bag me-2 text-primary"></i> 加入購物車</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                      <div class="rounded position-relative fruite-item">
+                        <div class="fruite-img">
+                          <img src="img/楊桃.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                          style="top: 10px; left: 10px;">Fruits
+                        </div>
+                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                          <h4>楊桃</h4>
+                          <p>產地：台灣<br>營養價值：水分、膳食纖維、維生素C、β-胡蘿蔔素、鉀、鎂、鋅</p>
+                          <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$75 /斤 </p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                              <i class="fa fa-shopping-bag me-2 text-primary"></i> 加入購物車1</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                  </div>
                 </div>
+              </div>
             </div>
+            <div id="tab-3" class="tab-pane fade show p-0">
+              <div class="row g-4">
+                <div class="col-lg-12">
+                  <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                      <div class="rounded position-relative fruite-item">
+                        <div class="fruite-img">
+                          <img src="img/黃金果1.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                          style="top: 10px; left: 10px;">Fruits</div>
+                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                          <h4>黃金果</h4>
+                          <p>產地：亞馬遜<br>營養價值：膳食纖維、維生素A、維生素C、維生素B群及多種礦物質</p>
+                          <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$99 / 斤</p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                class="fa fa-shopping-bag me-2 text-primary"></i> 加入購物車</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                      <div class="rounded position-relative fruite-item">
+                        <div class="fruite-img">
+                          <img src="img/榴槤1.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                          style="top: 10px; left: 10px;">Fruits</div>
+                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                          <h4>榴槤</h4>
+                          <p>產地：泰國、馬來西亞、印尼<br>營養價值：膳食纖維、鉀、維生素C、維生素B群、葉酸、鐵</p>
+                          <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$79 / 斤</p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                class="fa fa-shopping-bag me-2 text-primary"></i> 加入購物車</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                          <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="rounded position-relative fruite-item">
+                              <div class="fruite-img">
+                                <img src="img/小玉.png" class="img-fluid w-100 rounded-top" alt="">
+                              </div>
+                              <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits
+                              </div>
+                              <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>小玉西瓜</h4>
+                                <p>產地：台灣<br>營養價值：高水分與低熱量、鉀、維生素C、瓜胺酸</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                  <p class="text-dark fs-5 fw-bold mb-0">$18 / 斤</p>
+                                  <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> 加入購物車</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                                <div class="col-md-6 col-lg-4 col-xl-3">
+                                  <div class="rounded position-relative fruite-item">
+                                    <div class="fruite-img">
+                                      <img src="img/恐龍蛋1.png" class="img-fluid w-100 rounded-top" alt="">
+                                    </div>
+                                    <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits
+                                    </div>
+                                    <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                    <h4>恐龍蛋</h4>
+                                    <p>產地：智利<br> 營養價值：維生素、礦物質、膳食纖維、植化素、抗氧化成分</p>
+                                      <div class="d-flex justify-content-between flex-lg-wrap">
+                                        <p class="text-dark fs-5 fw-bold mb-0">$30 / 顆</p>
+                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                          <i class="fa fa-shopping-bag me-2 text-primary"></i> 加入購物車</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-4" class="tab-pane fade show p-0">
+              <div class="row g-4">
+                <div class="col-lg-12">
+                  <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                      <div class="rounded position-relative fruite-item">
+                        <div class="fruite-img">
+                          <img src="img/黑葡萄與翠綠葉片.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                          style="top: 10px; left: 10px;">Fruits</div>
+                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                          <h4>葡萄</h4>
+                          <p>產地：台灣<br>營養價值：葡萄糖、維生素(A, B群, C, K) 與礦物質(鉀、鈣等)</p>
+                          <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$99 / 斤</p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                      <div class="rounded position-relative fruite-item">
+                        <div class="fruite-img">
+                          <img src="img/木瓜1.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                          style="top: 10px; left: 10px;">Fruits</div>
+                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                          <h4>木瓜</h4>
+                          <p>產地：台灣<br>營養價值：維生素C、A、β-胡蘿蔔素、膳食纖維、木瓜酵素、鉀離子</p>
+                          <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$59 / 斤</p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                class="fa fa-shopping-bag me-2 text-primary"></i> 加入購物車</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                          <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="rounded position-relative fruite-item">
+                              <div class="fruite-img">
+                                <img src="img/酪梨1.png" class="img-fluid w-100 rounded-top" alt="">
+                              </div>
+                              <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits
+                              </div>
+                              <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>酪梨</h4>
+                                <p>產地：台灣<br>營養價值：不飽和脂肪酸、維生素、礦物質、膳食纖維、植化素</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                  <p class="text-dark fs-5 fw-bold mb-0">$69 / 斤</p>
+                                  <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> 加入購物車</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+
+
+
+                                <div class="col-md-6 col-lg-4 col-xl-3">
+                                  <div class="rounded position-relative fruite-item">
+                                    <div class="fruite-img">
+                                      <img src="img/百香果1.png" class="img-fluid w-100 rounded-top" alt="">
+                                    </div>
+                                    <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits
+                                    </div>
+                                    <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                      <h4>百香果</h4>
+                                      <p>產地：台灣<br>營養價值：膳食纖維、維生素C、A及多種植化素、類黃酮、類胡蘿蔔素</p>
+                                      <div class="d-flex justify-content-between flex-lg-wrap">
+                                        <p class="text-dark fs-5 fw-bold mb-0">$12/ 顆</p>
+                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                          <i class="fa fa-shopping-bag me-2 text-primary"></i> 加入購物車</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-5" class="tab-pane fade show p-0">
+              <div class="row g-4">
+                <div class="col-lg-12">
+                  <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                      <div class="rounded position-relative fruite-item">
+                        <div class="fruite-img">
+                          <img src="./img/蓮霧2.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                          style="top: 10px; left: 10px;">Fruits</div>
+                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                          <h4>蓮霧</h4>
+                          <p>產地：台灣<br>營養價值：高水分、膳食纖維、維生素C、鉀及多種植化素、花青素</p>
+                          <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$80 / 斤</p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                class="fa fa-shopping-bag me-2 text-primary"></i>加入購物車</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                          <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="rounded position-relative fruite-item">
+                              <div class="fruite-img">
+                                <img src="img/草莓1.png" class="img-fluid w-100 rounded-top" alt="">
+                              </div>
+                              <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits
+                              </div>
+                              <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>草莓</h4>
+                                <p>產地：台灣<br>營養價值：維生素C、葉酸、膳食纖維和鉀等</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                  <p class="text-dark fs-5 fw-bold mb-0">$300/ 盒</p>
+                                  <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> 加入購物車</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+
+
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                      <div class="rounded position-relative fruite-item">
+                        <div class="fruite-img">
+                          <img src="/img/櫻桃.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                          style="top: 10px; left: 10px;">Fruits</div>
+                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                          <h4>櫻桃</h4>
+                          <p>產地：美國、智利<br>營養價值：花青素、多酚、維生素C、A、鉀、鎂、鐵與膳食纖維</p>
+                          <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$250 / 盒</p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                class="fa fa-shopping-bag me-2 text-primary"></i> 加入購物車</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                      <div class="rounded position-relative fruite-item">
+                        <div class="fruite-img">
+                          <img src="./img/番茄1.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                          style="top: 10px; left: 10px;">Fruits</div>
+                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                          <h4>小番茄</h4>
+                          <p>產地：台灣<br>營養價值：維生素C、維生素A、β-胡蘿蔔素、茄紅素、鉀、膳食纖維</p>
+                          <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$100 /盒</p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                class="fa fa-shopping-bag me-2 text-primary"></i> 加入購物車</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Fruits Shop End-->
+      </div>
+    </div>
+    <!-- Fruits Shop End-->
+
 
 
 
