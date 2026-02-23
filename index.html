@@ -31,7 +31,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
     <style>
-
+v
 
 /* 讓 body 撐滿整個螢幕高度，並建立 Flex 佈局 */
 html, body {
@@ -50,11 +50,11 @@ main {
 
   /* 導覽列左側文字設定 */
     .navbar-left a {
-      font-family: '華康粗黑體'; 
+      font-family: '華康粗黑體';
       font-size: 30px;
       color: #000;
       text-decoration: none;
-      margin-right: 48px; 
+      margin-right: 48px;
     }
 
     .navbar-left a:hover {
@@ -62,12 +62,12 @@ main {
     }
 
 
-   
+
 
     /* 阻止整個頁面橫向滾動 */
         body {
             overflow-x: hidden;
-          
+
         }
 
 
@@ -75,27 +75,27 @@ main {
            cursor: pointer;
            }
 
-          .fruite-item img { 
-            height: 200px; object-fit: cover; 
+          .fruite-item img {
+            height: 200px; object-fit: cover;
           }
 
-          .fruite-item .btn { 
-            width: 100%; 
+          .fruite-item .btn {
+            width: 100%;
           }
 
-          #cart-counter { 
+          #cart-counter {
             font-weight: bold;
            }
 
-          .toast-container { 
+          .toast-container {
             position: fixed; top: 1rem; right: 1rem; z-index: 1080;
            }
 
-          .quantity-control { 
+          .quantity-control {
             display: flex; justify-content: center; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;
            }
 
-          .quantity-control button { 
+          .quantity-control button {
             width: 30px; height: 30px; padding: 0;
            }
 
@@ -116,7 +116,7 @@ main {
 
         /* footer 調整 */
           footer {
-              width: 100%; 
+              width: 100%;
               background: #F0C586;
               padding: 20px;
               color: #706553;
@@ -153,7 +153,7 @@ main {
   <body>
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid d-flex justify-content-between">
-      
+
       <!-- 左側導覽 -->
       <div class="navbar-left d-flex align-items-center">
         <a class="navbar-brand mb-0" href="index.html">首頁</a>
@@ -162,7 +162,7 @@ main {
       </div>
 
       <!-- 右側 Icons + 搜尋 -->
- 
+
 
             <!-- 右側搜尋 + 購物車 -->
     <div class="d-flex align-items-center gap-3">
@@ -208,7 +208,7 @@ main {
                 </div>
 
 
-  <!-- 季節按鈕 
+  <!-- 季節按鈕
   <ul class="nav nav-pills justify-content-center mb-5" id="season-tabs">
     <li class="nav-item"><a class="nav-link bg-warning text-dark rounded-pill mx-1 active" data-season="all">全部</a></li>
     <li class="nav-item"><a class="nav-link bg-light text-dark rounded-pill mx-1" data-season="spring">春季</a></li>
@@ -217,27 +217,27 @@ main {
     <li class="nav-item"><a class="nav-link bg-light text-dark rounded-pill mx-1" data-season="winter">冬季</a></li>
   </ul>
 
-   文字內容 
-   <div class="tab-content text-center mx-auto mb-5" style="max-width: 700px;"> 
-    <div class="tab-pane fade show active" id="tab-1"> 
+   文字內容
+   <div class="tab-content text-center mx-auto mb-5" style="max-width: 700px;">
+    <div class="tab-pane fade show active" id="tab-1">
 
-    </div> 
-    <div class="tab-pane fade" id="tab-2"> 
-      <p class="fs-2">農曆傳統四季月份</p> 
-      <p class="fs-3">春季：約2月初~5月初</p> 
-    </div> 
-    <div class="tab-pane fade" id="tab-3"> 
-        <p class="fs-2">農曆傳統四季月份</p> 
-        <p class="fs-3">夏季：約5月初~8月初</p> 
-      </div> 
+    </div>
+    <div class="tab-pane fade" id="tab-2">
+      <p class="fs-2">農曆傳統四季月份</p>
+      <p class="fs-3">春季：約2月初~5月初</p>
+    </div>
+    <div class="tab-pane fade" id="tab-3">
+        <p class="fs-2">農曆傳統四季月份</p>
+        <p class="fs-3">夏季：約5月初~8月初</p>
+      </div>
       <div class="tab-pane fade" id="tab-4">
          <p class="fs-2">農曆傳統四季月份</p>
-          <p class="fs-3">秋季：約8月初~11月初</p> 
-        </div> 
-        <div class="tab-pane fade" id="tab-5"> 
-          <p class="fs-2">農曆傳統四季月份</p> 
+          <p class="fs-3">秋季：約8月初~11月初</p>
+        </div>
+        <div class="tab-pane fade" id="tab-5">
+          <p class="fs-2">農曆傳統四季月份</p>
           <p class="fs-3">冬季：約11月初~翌年2月初</p>
-         </div> 
+         </div>
   </div>-->
 
 
@@ -250,7 +250,7 @@ main {
   <li class="nav-item"><a class="nav-link bg-light text-dark rounded-pill mx-1" data-season="winter">冬季</a></li>
 </ul>
 
-<!-- 文字內容 --> 
+<!-- 文字內容 -->
 <div id="season-text" class="text-center mx-auto mb-5" style="max-width:700px;">
   <p data-season="spring" style="display:none;">
     <span class="fs-2">農曆傳統四季月份</span><br>
@@ -272,7 +272,7 @@ main {
 
   <!-- 水果卡片 -->
   <div class="row g-4" id="fruit-list">
-    
+
 
     <!-- 春季水果範例 -->
     <div class="col-md-6 col-lg-4 col-xl-3" data-season="spring" data-fruit="藍莓">
@@ -280,7 +280,7 @@ main {
         <img src="./img/藍莓1.png" class="img-fluid w-100 rounded-top" alt="藍莓">
         <div class="p-3">
           <h4>藍莓</h4>
-          <p>產地：秘魯、智利、台灣<br>營養價值：花青素、類黃酮、維生素C、E、膳食纖維</p>
+          <p>產地：秘魯、智利、台灣<br>營養價值：<br>花青素、類黃酮、維生素C、E、膳食纖維</p>
           <p class="fw-bold">$90 / 盒</p>
           <button class="btn btn-warning add-cart-btn">加入購物車</button>
         </div>
@@ -298,7 +298,7 @@ main {
         </div>
       </div>
     </div>
-    
+
         <div class="col-md-6 col-lg-4 col-xl-3" data-season="spring" data-fruit="枇杷">
         <div class="rounded border fruite-item shadow-sm">
         <img src="./img/枇杷.png" class="img-fluid w-100 rounded-top" alt="枇杷">
@@ -531,9 +531,9 @@ main {
             <div class="col-6">
               <a href="#" class="h5">榴槤</a>
               <div class="d-flex my-3 justify-content-start flex-nowrap">
-              <span class="me-2 small">甜度6/10</span>
-              <span class="me-2 small">軟度10/10</span>
-              <span class="small">Ｑ度7/10</span>
+              <span class="me-2 small ">甜度<i class="far fa-face-grin fa-lg"></i></span>
+              <span class="me-2 small">軟度<i class="far fa-face-grin fa-lg"></i></span>
+              <span class="small">Ｑ度<i class="far fa-face-grin fa-lg"></i></span>
               </div>
             </div>
           </div>
@@ -825,7 +825,7 @@ main {
         <footer>
         <p>&copy; 黃君水果鋪 保留所有權利. <a href="https://www.moi.gov.tw/cp.aspx?n=10953" text-decoration="none">隱私政策</a></p>
         </footer>
- 
+
      <!-- JavaScript Libraries -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
