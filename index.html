@@ -35,18 +35,14 @@
       @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Noto+Serif+HK:wght@200..900&family=Playpen+Sans:wght@100..800&display=swap');
 
       @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Noto+Serif+HK:wght@200..900&family=Playpen+Sans:wght@100..800&display=swap');
-    body{
-      font-family:"Noto Serif Hong Kong",cursive
-    }
+    
     h2{
       font-family:"Noto Serif Hong Kong",cursive
     }
     h1{
       font-family:"Noto Serif Hong Kong",cursive
     }
-    p{
-      font-family:"Noto Serif Hong Kong",cursive
-    }
+    
 
 
     </style>
@@ -265,8 +261,8 @@ main {
 
 
   <!-- 季節按鈕 -->
-<ul class="nav nav-pills justify-content-center mb-5" id="season-tabs">
-  <li class="nav-item"><a class="nav-link bg-warning text-dark rounded-pill mx-1 active" data-season="all">全部</a></li>
+<ul class="nav nav-pills justify-content-center mb-3" id="season-tabs">
+  <li class="nav-item"><a class="nav-link bg-warning text-dark rounded-pill mx-1" data-season="all">全部</a></li>
   <li class="nav-item"><a class="nav-link bg-light text-dark rounded-pill mx-1" data-season="spring">春季</a></li>
   <li class="nav-item"><a class="nav-link bg-light text-dark rounded-pill mx-1" data-season="summer">夏季</a></li>
   <li class="nav-item"><a class="nav-link bg-light text-dark rounded-pill mx-1" data-season="autumn">秋季</a></li>
@@ -274,25 +270,24 @@ main {
 </ul>
 
 <!-- 文字內容 -->
-<div id="season-text" class="text-center mx-auto mb-5" style="max-width:700px;">
-  <p data-season="spring" style="display:none;">
+<div id="season-text" class="text-center mx-auto mb-3" style="max-width:700px;">
+  <h2 data-season="all" style="display:none;">
     <span class="fs-2">農曆傳統四季月份</span><br>
-    <span class="fs-3">春季：約2月初~5月初</span><br>
+    <span class="fs-3">春季：約2月初~5月初 夏季：約5月初~8月初</span><br>
+    <span class="fs-3">秋季：約8月初~11月初 冬季：約11月初~翌年2月初</span>
+  </h2>
+  <h2 data-season="spring" style="display:none;">
     <span class="fs-3">春季水果大多口感清爽、酸甜適中，不僅美味，也富含多種營養素，是補充維生素與提升活力的好選擇。</span>
-  </p>
-  <p data-season="summer" style="display:none;">
-    <span class="fs-2">農曆傳統四季月份</span><br>
-    <span class="fs-3">夏季：約5月初~8月初</span><br>
+  </h2>
+  <h2 data-season="summer" style="display:none;">
     <span class="fs-3">夏季水果大多水分充足、清爽解渴，能幫助補充流失的水分與營養，是消暑的最佳選擇。</span>
-  </p>
-  <p data-season="autumn" style="display:none;">
-    <span class="fs-2">農曆傳統四季月份</span><br>
-    <span class="fs-3">秋季：約8月初~11月初</span>
-  </p>
-  <p data-season="winter" style="display:none;">
-    <span class="fs-2">農曆傳統四季月份</span><br>
-    <span class="fs-3">冬季：約11月初~翌年2月初</span>
-  </p>
+  </h2>
+  <h2 data-season="autumn" style="display:none;">
+    <span class="fs-3">秋季水果大多香甜飽滿、營養豐富，適合在換季時補充能量與提升體力。</span>
+  </h2>
+  <h2 data-season="winter" style="display:none;">
+    <span class="fs-3">冬季水果大多甜度高、維生素豐富，特別適合在寒冷季節補充營養與提升免疫力。</span>
+  </h2>
 </div>
 
   <!-- 水果卡片 -->
@@ -306,7 +301,8 @@ main {
         <div class="p-3">
           <h4>藍莓</h4>
           <p style="text-align: left;">
-            產地：秘魯、智利、台灣<br>
+            產地名稱：<br>
+            秘魯、智利、台灣<br>
             營養價值：<br>
             花青素、類黃酮、維生素C、E
           </p>
@@ -322,7 +318,8 @@ main {
         <div class="p-3">
           <h4>桑椹</h4>
           <p style="text-align: left;">
-            產地：台灣<br>
+            產地名稱：<br>
+            台灣<br>
             營養價值：<br>
             花青素、維生素C、鐵、鈣
           </p>
@@ -338,7 +335,8 @@ main {
         <div class="p-3">
           <h4>枇杷</h4>
           <p style="text-align: left;">
-            產地：台灣<br>
+            產地名稱：<br>
+            台灣<br>
             營養價值：<br>
             維生素A、胡蘿蔔素、鉀、維生素C
           </p>
@@ -354,7 +352,8 @@ main {
         <div class="p-3">
           <h4>楊桃</h4>
           <p style="text-align: left;">
-            產地：台灣<br>
+            產地名稱：<br>
+            台灣<br>
             營養價值：<br>
             水分、膳食纖維、維生素C、鉀、鎂
           </p>
@@ -371,7 +370,8 @@ main {
         <div class="p-3">
           <h4>黃金果</h4>
           <p style="text-align: left;">
-            產地：亞馬遜<br>
+            產地名稱：<br>
+            亞馬遜<br>
             營養價值：<br>
             膳食纖維、維生素A、維生素C、B群
           </p>
@@ -387,7 +387,8 @@ main {
         <div class="p-3">
           <h4>小玉西瓜</h4>
           <p style="text-align: left;">
-            產地：台灣<br>
+            產地名稱：<br>
+            台灣<br>
             營養價值：<br>
             高水分、低熱量、瓜胺酸、維生素C
           </p>
@@ -403,7 +404,8 @@ main {
         <div class="p-3">
           <h4>恐龍蛋</h4>
           <p style="text-align: left;">
-            產地：智利<br>
+            產地名稱：<br>
+            智利<br>
             營養價值：<br>
             維生素、礦物質、膳食纖維、營養素
           </p>
@@ -419,7 +421,8 @@ main {
         <div class="p-3">
           <h4>榴槤</h4>
           <p style="text-align: left;">
-            產地：泰國、馬來西亞、印尼<br>
+            產地名稱：<br>
+            泰國、馬來西亞、印尼<br>
             營養價值：<br>
             膳食纖維、葉酸、鐵、維生素B群
           </p>
@@ -436,7 +439,8 @@ main {
         <div class="p-3">
           <h4>酪梨</h4>
           <p style="text-align: left;">
-            產地：台灣<br>
+            產地名稱：<br>
+            台灣<br>
             營養價值：<br>
             不飽和脂肪酸、維生素、膳食纖維
           </p>
@@ -452,7 +456,8 @@ main {
         <div class="p-3">
           <h4>百香果</h4>
           <p style="text-align: left;">
-            產地：台灣<br>
+            產地名稱：<br>
+            台灣<br>
             營養價值：<br>
             膳食纖維、維生素C、β-胡蘿蔔素
           </p>
@@ -468,7 +473,8 @@ main {
         <div class="p-3">
           <h4>木瓜</h4>
           <p style="text-align: left;">
-            產地：台灣南部<br>
+            產地名稱：<br>
+            台灣南部<br>
             營養價值：<br>
             維生素C、β-胡蘿蔔素、木瓜酵素
           </p>
@@ -484,7 +490,8 @@ main {
         <div class="p-3">
           <h4>葡萄</h4>
           <p style="text-align: left;">
-            產地：台灣<br>
+            產地名稱：<br>
+            台灣<br>
             營養價值：<br>
             葡萄糖、維生素、與礦物質
           </p>
@@ -502,7 +509,8 @@ main {
         <div class="p-3">
           <h4>草莓</h4>
           <p style="text-align: left;">
-            產地：台灣<br>
+            產地名稱：<br>
+            台灣<br>
             營養價值：<br>
             維生素C、鉀、膳食纖維、葉酸
           </p>
@@ -518,7 +526,8 @@ main {
         <div class="p-3">
           <h4>櫻桃</h4>
           <p style="text-align: left;">
-            產地：泰國、馬來西亞、印尼<br>
+            產地名稱：<br>
+            泰國、馬來西亞、印尼<br>
             營養價值：<br>
             膳食纖維、維生素C、B群、葉酸
           </p>
@@ -534,7 +543,8 @@ main {
         <div class="p-3">
           <h4>小番茄</h4>
           <p style="text-align: left;">
-            產地：台灣<br>
+            產地名稱：<br>
+            台灣<br>
             營養價值：<br>
             維生素C、維生素A、β-胡蘿蔔素、鉀
           </p>
@@ -550,7 +560,8 @@ main {
         <div class="p-3">
           <h4>蓮霧</h4>
           <p style="text-align: left;">
-            產地：泰國、馬來西亞、印尼<br>
+            產地名稱：<br>
+            泰國、馬來西亞、印尼<br>
             營養價值：<br>
             膳食纖維、鉀、維生素C、B群、葉酸
           </p>
@@ -573,309 +584,309 @@ main {
 
 
     <div class="col-lg-6 col-xl-3">
-      <div class="p-4 rounded bg-light">
-        <div class="row align-items-center">
-          <div class="col-6">
-            <img src="./img/枇杷.png" class="img-fluid rounded-circle w-100" alt="">
-          </div>
-          <div class="col-6">
-            <a href="#" class="h5">枇杷</a>
-            <div class="d-flex my-3 justify-content-start flex-nowrap">
-              <span class="me-2 small">甜度<i class="far fa-face-grin fa-lg"></i></span>
-              <span class="me-2 small">軟度<i class="far fa-face-grin fa-lg"></i></span>
-              <span class="small">Ｑ度2/10</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-      <div class="col-lg-6 col-xl-3">
-        <div class="p-4 rounded bg-light">
-          <div class="row align-items-center">
-            <div class="col-6">
-              <img src="./img/黃金果1.png" class="img-fluid rounded-circle w-100" alt="">
-            </div>
-            <div class="col-6">
-              <a href="#" class="h5">黃金果</a>
-              <div class="d-flex my-3 justify-content-start flex-nowrap">
-                <span class="me-2 small">甜度4/10</span>
-                <span class="me-2 small">軟度<i class="far fa-face-grin fa-lg"></i></span>
-                <span class="small">Ｑ度<i class="far fa-face-grin fa-lg"></i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-lg-6 col-xl-3">
-        <div class="p-4 rounded bg-light">
-          <div class="row align-items-center">
-            <div class="col-6">
-              <img src="./img/榴槤1.png" class="img-fluid rounded-circle w-100" alt="">
-            </div>
-            <div class="col-6">
-              <a href="#" class="h5">榴槤</a>
-              <div class="d-flex my-3 justify-content-start flex-nowrap">
-              <span class="me-2 small ">甜度<i class="far fa-face-grin fa-lg"></i></span>
-              <span class="me-2 small">軟度<i class="far fa-face-grin fa-lg"></i></span>
-              <span class="small">Ｑ度<i class="far fa-face-grin fa-lg"></i></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-lg-6 col-xl-3">
-        <div class="p-4 rounded bg-light">
-          <div class="row align-items-center">
-            <div class="col-6">
-              <img src="./img/小玉.png" class="img-fluid rounded-circle w-100" alt="">
-            </div>
-            <div class="col-6">
-              <a href="#" class="h5">小玉西瓜</a>
-              <div class="d-flex my-3 justify-content-start flex-nowrap">
-              <span class="me-2 small">甜度10/10</span>
-              <span class="me-2 small">脆度2/10</span>
-              <span class="small">Ｑ度5/10</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-lg-6 col-xl-3">
-        <div class="p-4 rounded bg-light">
-          <div class="row align-items-center">
-            <div class="col-6">
-              <img src="./img/藍莓.png" class="img-fluid rounded-circle w-100" alt="">
-            </div>
-            <div class="col-6">
-              <a href="#" class="h5">藍莓</a>
-              <div class="d-flex my-3 justify-content-start flex-nowrap">
-              <span class="me-2 small">甜度4/10</span>
-              <span class="me-2 small">軟度8/10</span>
-              <span class="small">Ｑ度0/10</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-lg-6 col-xl-3">
-        <div class="p-4 rounded bg-light">
-          <div class="row align-items-center">
-            <div class="col-6">
-              <img src="./img/草莓1.png" class="img-fluid rounded-circle w-100" alt="">
-            </div>
-            <div class="col-6">
-              <a href="#" class="h5">草莓</a>
-              <div class="d-flex my-3 justify-content-start flex-nowrap">
-                <span class="me-2 small">甜度7/10</span>
-                <span class="me-2 small">脆度6/10</span>
-                <span class="small">軟度6/10</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-            <div class="col-lg-6 col-xl-3">
-              <div class="p-4 rounded bg-light">
-                <div class="row align-items-center">
-                  <div class="col-6">
-                    <img src="./img/黑葡萄與翠綠葉片.png" class="img-fluid rounded-circle w-100" alt="">
-                  </div>
-                  <div class="col-6">
-                    <a href="#" class="h5">葡萄</a>
-                    <div class="d-flex my-3 justify-content-start flex-nowrap">
-                      <span class="me-2 small">甜度8/10</span>
-                      <span class="me-2 small">軟度8/10</span>
-                      <span class="small">Ｑ度1/10</span>
+                  <div class="p-4 rounded bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <img src="./img/枇杷.png" class="img-fluid rounded-circle w-100" alt="">
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="h5">枇杷</a>
+                        <div class="d-flex my-3 justify-content-start flex-nowrap">
+                          <span class="me-2 small">甜度<i class="far fa-face-grin"></i></span>
+                          <span class="me-2 small">軟度<i class="far fa-face-grin"></i></span>
+                          <span class="small">Ｑ度<i class="far fa-face-frown"></i></span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
 
 
-          <div class="col-lg-6 col-xl-3">
-            <div class="p-4 rounded bg-light">
-              <div class="row align-items-center">
-                <div class="col-6">
-                  <img src="./img/番茄1.png" class="img-fluid rounded-circle w-100" alt="">
-                </div>
-                <div class="col-6">
-                  <a href="#" class="h5">小番茄</a>
-                  <div class="d-flex my-3 justify-content-start flex-nowrap">
-                    <span class="me-2 small">甜度7/10</span>
-                    <span class="me-2 small">硬度4/10</span>
-                    <span class="small">Ｑ度0/10</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-
-            <div class="col-lg-6 col-xl-3">
-              <div class="p-4 rounded bg-light">
-                <div class="row align-items-center">
-                  <div class="col-6">
-                    <img src="./img/酪梨1.png" class="img-fluid rounded-circle w-100" alt="">
-                  </div>
-                  <div class="col-6">
-                    <a href="#" class="h5">酪梨</a>
-                    <div class="d-flex my-3 justify-content-start flex-nowrap">
-                      <span class="me-2 small">甜度2/10</span>
-                      <span class="me-2 small">軟度10/10</span>
-                      <span class="small">Ｑ度0/10</span>
+                <div class="col-lg-6 col-xl-3">
+                  <div class="p-4 rounded bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <img src="./img/黃金果1.png" class="img-fluid rounded-circle w-100" alt="">
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="h5">黃金果</a>
+                        <div class="d-flex my-3 justify-content-start flex-nowrap">
+                          <span class="me-2 small">甜度<i class="far fa-face-frown-open"></i></span>
+                          <span class="me-2 small">軟度<i class="far fa-face-grin-beam"></i></span>
+                          <span class="small">Ｑ度<i class="far fa-face-grin"></i></span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
 
 
-            <div class="col-lg-6 col-xl-3">
-              <div class="p-4 rounded bg-light">
-                <div class="row align-items-center">
-                  <div class="col-6">
-                    <img src="./img/恐龍蛋1.png" class="img-fluid rounded-circle w-100" alt="">
-                  </div>
-                  <div class="col-6">
-                    <a href="#" class="h5">恐龍蛋</a>
-                    <div class="d-flex my-3 justify-content-start flex-nowrap">
-                      <span class="me-2 small">甜度5/10</span>
-                      <span class="me-2 small">硬度5/10</span>
-                      <span class="small">Ｑ度5/10</span>
+                <div class="col-lg-6 col-xl-3">
+                  <div class="p-4 rounded bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <img src="./img/榴槤1.png" class="img-fluid rounded-circle w-100" alt="">
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="h5">榴槤</a>
+                        <div class="d-flex my-3 justify-content-start flex-nowrap">
+                          <span class="me-2 small">甜度<i class="far fa-face-frown-open"></i></span>
+                          <span class="me-2 small">軟度<i class="far fa-face-grin-beam"></i></span>
+                          <span class="small">Ｑ度<i class="far fa-face-grin"></i></span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
 
 
-            <div class="col-lg-6 col-xl-3">
-              <div class="p-4 rounded bg-light">
-                <div class="row align-items-center">
-                  <div class="col-6">
-                    <img src="./img/木瓜1.png" class="img-fluid rounded-circle w-100" alt="">
-                  </div>
-                  <div class="col-6">
-                    <a href="#" class="h5">木瓜</a>
-                    <div class="d-flex my-3 justify-content-start flex-nowrap">
-                      <span class="me-2 small">甜度7/10</span>
-                      <span class="me-2 small">軟度10/10</span>
-                      <span class="small">Ｑ度3/10</span>
+                <div class="col-lg-6 col-xl-3">
+                  <div class="p-4 rounded bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <img src="./img/小玉.png" class="img-fluid rounded-circle w-100" alt="">
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="h5">小玉西瓜</a>
+                        <div class="d-flex my-3 justify-content-start flex-nowrap">
+                          <span class="me-2 small">甜度<i class="far fa-face-grin-beam"></i></span>
+                          <span class="me-2 small">脆度<i class="far fa-face-frown"></i></span>
+                          <span class="small">Ｑ度<i class="far fa-face-frown-open"></i></span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
 
 
-            <div class="col-lg-6 col-xl-3">
-              <div class="p-4 rounded bg-light">
-                <div class="row align-items-center">
-                  <div class="col-6">
-                    <img src="./img/桑葚.png" class="img-fluid rounded-circle w-100" alt="">
-                  </div>
-                  <div class="col-6">
-                    <a href="#" class="h5">桑椹</a>
-                    <div class="d-flex my-3 justify-content-start flex-nowrap">
-                      <span class="me-2 small">甜度3/10</span>
-                      <span class="me-2 small">硬度4/10</span>
-                      <span class="small">Ｑ度1/10</span>
+                <div class="col-lg-6 col-xl-3">
+                  <div class="p-4 rounded bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <img src="./img/藍莓.png" class="img-fluid rounded-circle w-100" alt="">
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="h5">藍莓</a>
+                        <div class="d-flex my-3 justify-content-start flex-nowrap">
+                          <span class="me-2 small">甜度<i class="far fa-face-frown-open"></i></span>
+                          <span class="me-2 small">軟度<i class="far fa-face-grin"></i></span>
+                          <span class="small">Ｑ度<i class="far fa-face-frown"></i></span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
 
 
-            <div class="col-lg-6 col-xl-3">
-              <div class="p-4 rounded bg-light">
-                <div class="row align-items-center">
-                  <div class="col-6">
-                    <img src="./img/楊桃.png" class="img-fluid rounded-circle w-100" alt="">
-                  </div>
-                  <div class="col-6">
-                    <a href="#" class="h5">楊桃</a>
-                    <div class="d-flex my-3 justify-content-start flex-nowrap">
-                      <span class="me-2 small">甜度6/10</span>
-                      <span class="me-2 small">脆度9/10</span>
-                      <span class="small">硬度3/10</span>
+                <div class="col-lg-6 col-xl-3">
+                  <div class="p-4 rounded bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <img src="./img/草莓1.png" class="img-fluid rounded-circle w-100" alt="">
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="h5">草莓</a>
+                        <div class="d-flex my-3 justify-content-start flex-nowrap">
+                          <span class="me-2 small">甜度<i class="far fa-face-grin"></i></span>
+                          <span class="me-2 small">脆度<i class="far fa-face-frown-open"></i></span>
+                          <span class="small">軟度<i class="far fa-face-frown-open"></i></span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
 
 
-          <div class="col-lg-6 col-xl-3">
-            <div class="p-4 rounded bg-light">
-              <div class="row align-items-center">
-                <div class="col-6">
-                  <img src="./img/蓮霧2.png" class="img-fluid rounded-circle w-100" alt="">
-                </div>
-                <div class="col-6">
-                  <a href="#" class="h5">蓮霧</a>
-                  <div class="d-flex my-3 justify-content-start flex-nowrap">
-                    <span class="me-2 small">甜度8/10</span>
-                    <span class="me-2 small">硬度3/10</span>
-                    <span class="small">脆度7/10</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-
-            <div class="col-lg-6 col-xl-3">
-              <div class="p-4 rounded bg-light">
-                <div class="row align-items-center">
-                  <div class="col-6">
-                    <img src="./img/百香果1.png" class="img-fluid rounded-circle w-100" alt="">
-                  </div>
-                  <div class="col-6">
-                    <a href="#" class="h5">百香果</a>
-                    <div class="d-flex my-3 justify-content-start flex-nowrap">
-                    <span class="me-2 small">甜度2/10</span>
-                    <span class="me-2 small">軟度2/10</span>
-                    <span class="small">Ｑ度4/10</span>
+                <div class="col-lg-6 col-xl-3">
+                  <div class="p-4 rounded bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <img src="./img/黑葡萄與翠綠葉片.png" class="img-fluid rounded-circle w-100" alt="">
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="h5">葡萄</a>
+                        <div class="d-flex my-3 justify-content-start flex-nowrap">
+                          <span class="me-2 small">甜度<i class="far fa-face-grin"></i></span>
+                          <span class="me-2 small">軟度<i class="far fa-face-grin"></i></span>
+                          <span class="small">Ｑ度<i class="far fa-face-frown"></i></span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
 
 
-            <div class="col-lg-6 col-xl-3">
-              <div class="p-4 rounded bg-light">
-                <div class="row align-items-center">
-                  <div class="col-6">
-                    <img src="/img/櫻桃1.png" class="img-fluid rounded-circle w-100" alt="">
-                  </div>
-                  <div class="col-6">
-                    <a href="#" class="h5">櫻桃</a>
-                    <div class="d-flex my-3 justify-content-start flex-nowrap">
-                      <span class="me-2 small">甜度7/10</span>
-                      <span class="me-2 small">脆度7/10</span>
-                      <span class="small">Ｑ度4/10</span>
+                <div class="col-lg-6 col-xl-3">
+                  <div class="p-4 rounded bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <img src="./img/番茄1.png" class="img-fluid rounded-circle w-100" alt="">
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="h5">小番茄</a>
+                        <div class="d-flex my-3 justify-content-start flex-nowrap">
+                          <span class="me-2 small">甜度<i class="far fa-face-grin"></i></span>
+                          <span class="me-2 small">硬度<i class="far fa-face-frown-open"></i></span>
+                          <span class="small">Ｑ度<i class="far fa-face-frown"></i></span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
+
+
+                <div class="col-lg-6 col-xl-3">
+                  <div class="p-4 rounded bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <img src="./img/酪梨1.png" class="img-fluid rounded-circle w-100" alt="">
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="h5">酪梨</a>
+                        <div class="d-flex my-3 justify-content-start flex-nowrap">
+                          <span class="me-2 small">甜度<i class="far fa-face-frown"></i></span>
+                          <span class="me-2 small">軟度<i class="far fa-face-grin-beam"></i></span>
+                          <span class="small">Ｑ度<i class="far fa-face-frown"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-6 col-xl-3">
+                  <div class="p-4 rounded bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <img src="./img/恐龍蛋1.png" class="img-fluid rounded-circle w-100" alt="">
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="h5">恐龍蛋</a>
+                        <div class="d-flex my-3 justify-content-start flex-nowrap">
+                          <span class="me-2 small">甜度<i class="far fa-face-frown-open"></i></span>
+                          <span class="me-2 small">硬度<i class="far fa-face-frown-open"></i></span>
+                          <span class="small">Ｑ度<i class="far fa-face-frown-open"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-6 col-xl-3">
+                  <div class="p-4 rounded bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <img src="./img/木瓜1.png" class="img-fluid rounded-circle w-100" alt="">
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="h5">木瓜</a>
+                        <div class="d-flex my-3 justify-content-start flex-nowrap">
+                          <span class="me-2 small">甜度<i class="far fa-face-grin"></i></span>
+                          <span class="me-2 small">軟度<i class="far fa-face-grin-beam"></i></span>
+                          <span class="small">Ｑ度<i class="far fa-face-frown"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-6 col-xl-3">
+                  <div class="p-4 rounded bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <img src="./img/桑葚.png" class="img-fluid rounded-circle w-100" alt="">
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="h5">桑椹</a>
+                        <div class="d-flex my-3 justify-content-start flex-nowrap">
+                          <span class="me-2 small">甜度<i class="far fa-face-frown"></i></span>
+                          <span class="me-2 small">硬度<i class="far fa-face-frown-open"></i></span>
+                          <span class="small">Ｑ度<i class="far fa-face-frown"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-6 col-xl-3">
+                  <div class="p-4 rounded bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <img src="./img/楊桃.png" class="img-fluid rounded-circle w-100" alt="">
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="h5">楊桃</a>
+                        <div class="d-flex my-3 justify-content-start flex-nowrap">
+                          <span class="me-2 small">甜度<i class="far fa-face-grin"></i></span>
+                          <span class="me-2 small">脆度<i class="far fa-face-grin-beam"></i></span>
+                          <span class="small">硬度<i class="far fa-face-frown-open"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-6 col-xl-3">
+                  <div class="p-4 rounded bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <img src="./img/蓮霧2.png" class="img-fluid rounded-circle w-100" alt="">
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="h5">蓮霧</a>
+                        <div class="d-flex my-3 justify-content-start flex-nowrap">
+                          <span class="me-2 small">甜度<i class="far fa-face-grin-beam"></i></span>
+                          <span class="me-2 small">硬度<i class="far fa-face-frown"></i></span>
+                          <span class="small">脆度<i class="far fa-face-grin"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-6 col-xl-3">
+                  <div class="p-4 rounded bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <img src="./img/百香果1.png" class="img-fluid rounded-circle w-100" alt="">
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="h5">百香果</a>
+                        <div class="d-flex my-3 justify-content-start flex-nowrap">
+                          <span class="me-2 small">甜度<i class="far fa-face-frown"></i></span>
+                          <span class="me-2 small">軟度<i class="far fa-face-frown"></i></span>
+                          <span class="small">Ｑ度<i class="far fa-face-frown-open"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-6 col-xl-3">
+                  <div class="p-4 rounded bg-light">
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <img src="./img/櫻桃.png" class="img-fluid rounded-circle w-100" alt="">
+                      </div>
+                      <div class="col-6">
+                        <a href="#" class="h5">櫻桃</a>
+                        <div class="d-flex my-3 justify-content-start flex-nowrap">
+                          <span class="me-2 small">甜度<i class="far fa-face-grin-beam"></i></span>
+                          <span class="me-2 small">脆度<i class="far fa-face-grin-beam"></i></span>
+                          <span class="small">Ｑ度<i class="far fa-face-frown-open"></i></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
 <!-- ✅ 右側滑出購物車 (Bootstrap Offcanvas) -->
 <div class="offcanvas offcanvas-end" tabindex="-1" id="cartSidebar">
